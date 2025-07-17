@@ -1,0 +1,163 @@
+:root {
+    --titColor: #9a7d52;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../font/arial.ttf');
+}
+
+.main {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+header .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.black {
+    list-style: square;
+    padding-left: 20px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+header .main .logo {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .nav li a {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #9a7d52;
+}
+
+header .menu {
+    display: none;
+}
+
+.row {
+    display: flex;
+}
+
+header .menu .icon {
+    width: 40px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    .main {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .swiper {
+        height: 400px!important;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .main {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .swiper {
+        height: 400px!important;
+    }
+    header .menu {
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: var(--titColor);
+        opacity: .9;
+    }
+    nav .nav {
+        flex-direction: column;
+    }
+    header nav .nav li a {
+        color: #fff;
+        padding: 18px 100px;
+        display: block;
+    }
+    nav li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+    nav li:last-child {
+        border-bottom: none;
+    }
+    .dates .tr {
+        font-size: 18px!important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .dates .tr {
+        font-size: 16px!important;
+    }
+    .swiper {
+        height: 300px!important;
+    }
+    .cardAvatar .item {
+        width: 48.5%!important;
+    }
+    .cardAvatar .item img {
+        width: 100%;
+    }
+}
